@@ -1,0 +1,203 @@
+.about{
+    padding-bottom: 100px;
+    @media #{$small_laptop}{
+        padding-bottom: 50px;
+    }
+    @media #{$small_tab}{
+        padding-bottom: 40px;
+        padding-top: 80px;
+    }
+    .about_block{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .about_top{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            @media #{$middle}{
+                align-items: start;
+            }
+            @media #{$small_laptop}{
+                align-items: end;
+            }
+            @media #{$tab}{
+                flex-direction: column;
+            }
+            .about_content{
+                width: calc(50% - 20px);
+                @media #{$tab}{
+                    width: 100%;
+                }
+                .about_subtitle{
+                    color: #353641;
+                    font-family: 'Montserrat';
+                    font-size: 32px;
+                    font-weight: 400;
+                    line-height: normal;
+                    margin-bottom: 20px;
+                    @media #{$middle}{
+                        font-size: 26px;
+                    }
+                    @media #{$big_laptop}{
+                        font-size: 20px;
+                    }
+                    @media #{$small_tab}{
+                        margin-bottom: 14px;
+                    }
+                }
+                .about_desc{
+                    color: #353641;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: normal;
+                    @media #{$middle}{
+                        font-size: 17px;
+                    }
+                    @media #{$big_laptop}{
+                        font-size: 14px;
+                    }
+                    @media #{$small_tab}{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .about_right{
+                width: calc(50% - 20px);
+                @media #{$tab}{
+                    width: 100%;
+                }
+            }
+        }
+        .about_bottom{
+            display: flex;
+            gap: 20px;
+            @media #{$tab}{
+                flex-wrap: wrap;
+            }
+            .count_item{
+                border-radius: 10px;
+                background: #F7F7FA;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: 390px;
+                min-height: 175px;
+                padding: 30px;
+                @media #{$big_laptop}{
+                    min-height: 140px;
+                    padding: 20px;
+                    width: calc(25% - 15px);
+                }
+                @media #{$small_laptop}{
+                    min-height: 120px;
+                }
+                @media #{$tab}{
+                    width: calc(50% - 10px);
+                }
+                @media #{$small_tab}{
+                    width: 100%;
+                    padding: 30px;
+                    min-height: 160px;
+                }
+                .count_num{
+                    display: flex;
+                    align-items: center;
+                    color: #353641;
+                    font-size: 70px;
+                    font-weight: 400;
+                    line-height: normal;
+                    @media #{$middle}{
+                        font-size: 55px;
+                    }
+                    @media #{$big_laptop}{
+                        font-size: 45px;
+                    }
+                    @media #{$small_laptop}{
+                        font-size: 35px;
+                    }
+                    @media #{$small_tab}{
+                        font-size: 60px;
+                    }
+                }
+                .count_name{
+                    color: #353641;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: normal;
+                    @media #{$middle}{
+                        font-size: 17px;
+                    }
+                    @media #{$big_laptop}{
+                        font-size: 15px;
+                    }
+                    @media #{$small_laptop}{
+                        font-size: 14px;
+                    }
+                    @media #{$small_tab}{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .swiper-button-next, .swiper-button-prev{
+            border: 5px solid #fff;
+            background: #353641;
+            width: 72px;
+            height: 72px;
+            top: 185px;
+            @media #{$middle}{
+                top: 168px;
+            }
+            @media #{$big_laptop}{
+                width: 49px;
+                height: 49px;
+                top: 142px;
+            }
+            @media #{$tab}{
+                top: 176px;
+            }
+            @media #{$small_tab}{
+                top: 132px;
+            }
+            @media #{$big_mobile}{
+                top: 95px;
+            }
+            @media #{$smaller_mobile}{
+                top: 86px;
+            }
+        }
+        .about__slider{
+            position: relative;
+            .swiper-slide{
+                img{
+                    @media #{$middle}{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .swiper-button-next{
+            right: -36px;
+            @media #{$big_laptop}{
+                right: -22px;
+            }
+            @media #{$big_mobile}{
+                right: -18px;
+            }
+        }
+        .swiper-button-prev{
+            left: -36px;
+            @media #{$big_laptop}{
+                left: -22px;
+            }
+            @media #{$big_mobile}{
+                left: -18px;
+            }
+        }
+        .swiper-wrapper {
+            padding-bottom: 35px;
+        }
+    }
+}

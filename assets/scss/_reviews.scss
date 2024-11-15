@@ -1,0 +1,147 @@
+.reviews{
+    .reviews_block{
+        position: relative;
+        .reviews_slide_item{
+            border-radius: 10px;
+            border: 1px solid #EDEDED;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            @media #{$middle}{
+                gap: 20px;
+            }
+            @media #{$big_laptop}{
+                padding: 20px;
+                gap: 15px;
+            }
+            @media #{$small_tab}{
+                padding: 30px;
+                gap: 24px;
+            }
+            .reviews_item_top{
+                display: flex;
+                align-items: center;
+                gap: 12px;
+                .reviews_item_img_mini{
+                    border-radius: 50%;
+                }
+                .reviews_item_title{
+                    color: #353641;
+                    font-size: 24px;
+                    font-weight: 400;
+                    line-height: 30px; /* 125% */
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2px;
+                    @media #{$middle}{
+                        font-size: 22px;
+                    }
+                    @media #{$big_laptop}{
+                        font-size: 16px;
+                    }
+                    @media #{$small_tab}{
+                        font-size: 20px;
+                    }
+                    .reviews_item_subtitle{
+                        color: #E94628;
+                        font-family: 'Montserrat';
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: normal;
+                        @media #{$middle}{
+                            font-size: 18px;
+                        }
+                        @media #{$big_laptop}{
+                            font-size: 15px;
+                        }
+                        @media #{$small_tab}{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+            .reviews_item_main_img{
+                border-radius: 10px;
+                background: url(<path-to-image>) lightgray 50% / cover no-repeat, #D9D9D9;
+                max-height: 186px;
+                object-fit: cover;
+                @media #{$big_laptop}{
+                    min-height: 130px;
+                }
+            }
+            .reviews_item_stars{
+                display: flex;
+                align-items: center;
+                svg{
+                    @media #{$middle}{
+                        width: 25px;
+                    }
+                    @media #{$big_laptop}{
+                        width: 20px;
+                    }
+                    @media #{$small_tab}{
+                        width: 25px;
+                    }
+                }
+            }
+            .reviews_item_desc{
+                color: #353641;
+                font-family: 'Montserrat';
+                font-size: 20px;
+                font-weight: 400;
+                line-height: normal;
+                @media #{$middle}{
+                    font-size: 17px;
+                }
+                @media #{$big_laptop}{
+                    font-size: 14px;
+                }
+                @media #{$small_tab}{
+                    font-size: 16px;
+                }
+            }
+        }
+        .swiper-button-next, .swiper-button-prev{
+            width: 62px;
+            height: 62px;
+            top: 44px;
+            @media #{$big_laptop}{
+                width: 49px;
+                height: 49px;
+                top: 30px;
+            }
+            @media #{$small_tab}{
+                top: auto;
+            }
+        }
+        .swiper-button-next{
+            right: 0;
+            
+        }
+        .swiper-button-prev{
+            right: 72px;
+            left: auto;
+            @media #{$big_laptop}{
+                right: 59px;
+            }
+            @media #{$small_tab}{
+                right: auto;
+            }
+        }
+        .swiper-wrapper{
+            @media #{$small_tab}{
+                padding-bottom: 50px;
+            }
+        }
+        .swiper-buttons{
+            @media #{$small_tab}{
+                position: relative;
+                bottom: -30px;
+                display: flex;
+                width: 110px;
+                margin: 0 auto;
+            }
+        }
+    }
+}

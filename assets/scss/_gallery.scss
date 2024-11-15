@@ -1,0 +1,434 @@
+.gallery{
+    .gallery_block{
+        .neptun_block{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            @media #{$tab}{
+                flex-direction: column;
+            }
+            .neptun_block_left{
+                width: 410px;
+                position: relative;
+                @media #{$tab}{
+                    width: 100%;
+                }
+                .swiper-button-lock{
+                    display: flex;
+                }
+                .swiper-slide{
+                    height: 100px;
+                }
+                .swiper--neptun_l{
+                    height: 850px;
+                    @media #{$middle}{
+                        height: 768px;
+                    }
+                    @media #{$big_laptop}{
+                        height: 600px;
+                    }
+                    @media #{$small_laptop}{
+                        height: 570px;
+                    }
+                    @media #{$tab}{
+                        height: 130px;
+                    }
+                }
+                .swiper-button-next{
+                    top: auto;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    svg{
+                        transform: rotate(90deg);
+                        @media #{$tab}{
+                            transform: none;
+                        }
+                    }
+                    @media #{$tab}{
+                        top: 50%;
+                        left: auto;
+                    }
+                    @media #{$small_tab}{
+                        top: 35px;
+                        right: -32px;
+                    }
+                    @media #{$big_mobile}{
+                        right: -23px;
+                    }
+                }
+                .swiper-button-next, .swiper-button-prev{
+                    background: transparent;
+                    path{
+                        fill: #353641;
+                    }
+                }
+                .swiper-button-prev{
+                    top: -56px;
+                    left: 0;
+                    right: 0;
+                    margin: 0 auto;
+                    svg{
+                        transform: rotate(90deg);
+                    }
+                    @media #{$tab}{
+                        top: 50%;
+                        right: auto;
+                        svg{
+                            transform: none;
+                        }
+                    }
+                    @media #{$small_tab}{
+                        left: -32px;
+                        top: 35px;
+                    }
+                    @media #{$big_mobile}{
+                        left: -23px;
+                    }
+                }
+                .swiper-wrapper{
+                    padding-top: 6px;
+                    padding-bottom: 0px;
+                }
+                .neptun_left_item{
+                    border-radius: 10px;
+                    border: 1px solid #EDEDED;
+                    padding: 30px;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 32px;
+                    background-color: #fff;
+                    cursor: pointer;
+                    transition: all linear 0.4s;
+                    overflow: clip;
+                    @media #{$middle}{
+                        gap: 20px;
+                    }
+                    @media #{$big_laptop}{
+                        gap: 15px;
+                    }
+                    @media #{$small_tab}{
+                        padding: 20px;
+                        background-color: #353641;
+                        span{
+                            color: rgba(228, 228, 228, 0.30);
+                        }
+                        p{
+                            color: #fff;
+                        }
+                        .neptun_left_item_main_img{
+                            opacity: 1;
+                            mix-blend-mode: normal;
+                        }
+                    }
+                    @media #{$big_mobile}{
+                        width: 85%;
+                        margin: 0 auto;
+                    }
+                    &:hover{
+                        background-color: #353641;
+                        span{
+                            color: rgba(228, 228, 228, 0.30);
+                        }
+                        p{
+                            color: #fff;
+                        }
+                        .neptun_left_item_main_img{
+                            opacity: 1;
+                            mix-blend-mode: normal;
+                        }
+                    }
+                    .neptun_left_item_main_img{
+                        position: absolute;
+                        right: 0;
+                        width: 100%;
+                        max-width: 130px;
+                        height: 100%;
+                        object-fit: cover;
+                        top: 0;
+                        opacity: 0.3;
+                        // background: url(<path-to-image>) lightgray 50% / cover no-repeat, #D9D9D9;
+                        mix-blend-mode: luminosity;
+                        @media #{$middle}{
+                            max-width: 100px;
+                        }
+                        @media #{$big_laptop}{
+                            max-width: 90px;
+                        }
+                        @media #{$small_tab}{
+                            display: none;
+                        }
+                    }
+                    span{
+                        color: #DCDCDC;
+                        font-family: 'Montserrat';
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: normal;
+                        @media #{$middle}{
+                            font-size: 15px;
+                        }
+                        @media #{$big_laptop}{
+                            font-size: 13px;
+                        }
+                        @media #{$small_tab}{
+                            font-size: 16px;
+                            color: rgba(228, 228, 228, 0.30);
+                        }
+                    }
+                    p{
+                        color: #353641;
+                        font-size: 24px;
+                        font-weight: 400;
+                        line-height: 30px; /* 125% */
+                        @media #{$middle}{
+                            font-size: 18px;
+                        }
+                        @media #{$big_laptop}{
+                            font-size: 15px;
+                        }
+                        @media #{$small_tab}{
+                            font-size: 20px;
+                            color: #fff;
+                        }
+                    }
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .neptun_block_right{
+                border-radius: 10px;
+                border: 1px solid #EDEDED;
+                padding-top: 60px;
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                width: 1190px;
+                position: relative;
+                overflow-y: clip;
+                @media #{$middle}{
+                    width: 1050px;
+                }
+                @media #{$big_laptop}{
+                    width: 75%;
+                    padding-top: 40px;
+                }
+                @media #{$tab}{
+                    width: 100%;
+                }
+                @media #{$small_tab}{
+                    gap: 0;
+                    padding-top: 30px;
+                }
+                display: none;
+                &.show{
+                    display: flex;
+                }
+                svg{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    z-index: 1;
+                    @media #{$big_laptop}{
+                        bottom: -40px;
+                    }
+                    @media #{$small_laptop}{
+                        bottom: 0;
+                    }
+                }
+                .neptun_block_right_top{
+                    display: flex;
+                    padding: 0 60px;
+                    gap: 45px;
+                    @media #{$small_tab}{
+                        flex-direction: column;
+                        gap: 32px;
+                        margin-bottom: 32px;
+                        padding: 0 20px;
+                    }
+                    .neptun_block_right_top_content{
+                        @media #{$small_tab}{
+                            order: 2;
+                        }
+                        span{
+                            color: #E94628;
+                            font-family: 'Montserrat';
+                            font-size: 20px;
+                            font-weight: 600;
+                            line-height: normal;
+                            margin-bottom: 32px;
+                            display: block;
+                            @media #{$middle}{
+                                font-size: 18px;
+                                margin-bottom: 25px;
+                            }
+                            @media #{$big_laptop}{
+                                font-size: 16px;
+                                margin-bottom: 20px;
+                            }
+                            @media #{$small_tab}{
+                                margin-bottom: 14px;
+                            }
+                        }
+                        .neptun_title{
+                            color: #353641;
+                            font-size: 32px;
+                            font-weight: 400;
+                            line-height: 30px; /* 93.75% */
+                            margin-bottom: 20px;
+                            @media #{$middle}{
+                                font-size: 28px;
+                                margin-bottom: 15px;
+                            }
+                            @media #{$big_laptop}{
+                                font-size: 22px;
+                                margin-bottom: 10px;
+                            }
+                            @media #{$small_tab}{
+                                font-size: 28px;
+                                margin-bottom: 14px;
+                            }
+                        }
+                        p{
+                            color: #353641;
+                            font-family: 'Montserrat';
+                            font-size: 24px;
+                            font-weight: 400;
+                            line-height: normal;
+                            @media #{$middle}{
+                                font-size: 21px;
+                            }
+                            @media #{$big_laptop}{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    .neptun_block_logo{
+                        border-radius: 10px;
+                        border: 1px solid #EDEDED;
+                        width: 507px;
+                        height: 193px;
+                        padding: 18px 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @media #{$big_laptop}{
+                            img{
+                                width: 100%;
+                            }
+                            height: 150px;
+                        }
+                        @media #{$small_tab}{
+                            order: 1;
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                }
+                .neptun_block_right_middle{
+                    padding: 0 60px;
+                    @media #{$big_laptop}{
+                        padding: 0 40px;
+                        position: relative;
+                        z-index: 5;
+                    }
+                    @media #{$small_tab}{
+                        padding: 0 20px;
+                    }
+                    .neptun_item_main_img{
+                        width: 100%;
+                    }
+                    .neptun__slider{
+                        position: relative;
+                    }
+                    .swiper-wrapper {
+                        padding-bottom: 30px;
+                    }
+                    .swiper-button-prev, .swiper-button-next{
+                        top: 125px;
+                        border: 5px solid #fff;
+                        svg{
+                            width: revert-layer;
+                            @media #{$big_laptop}{
+                                bottom: 0;
+                            }
+                        }
+                        @media #{$middle}{
+                            top: 110px;
+                        }
+                        @media #{$big_laptop}{
+                            top: 100px;
+                        }
+                        @media #{$small_tab}{
+                            top: 125px;
+                        }
+                        @media #{$big_mobile}{
+                            top: 84px;
+                        }
+                    }
+                    .swiper-button-next{
+                        right: -36px;
+                        @media #{$big_laptop}{
+                            right: -26px;
+                        }
+                        @media #{$big_mobile}{
+                            right: -22px;
+                        }
+                    }
+                    .swiper-button-prev{
+                        left: -36px;
+                        @media #{$big_laptop}{
+                            left: -26px;
+                        }
+                        @media #{$big_mobile}{
+                            left: -22px;
+                        }
+                    }
+                }
+                .neptun_block_right_bottom{
+                    display: flex;
+                    gap: 20px;
+                    flex-wrap: wrap;
+                    position: relative;
+                    z-index: 2;
+                    padding: 0 60px 60px 60px;
+                    @media #{$big_laptop}{
+                        padding: 0 40px 40px 40px;
+                    }
+                    @media #{$small_tab}{
+                        padding: 32px 20px 30px 20px;
+                        background-color: #FFE9E5;
+                    }
+                    p{
+                        color: #353641;
+                        font-family: 'Montserrat';
+                        font-size: 20px;
+                        font-weight: 400;
+                        line-height: normal;
+                        @media #{$middle}{
+                            font-size: 17px;
+                        }
+                        @media #{$big_laptop}{
+                            font-size: 14px;
+                        }
+                        @media #{$small_tab}{
+                            font-size: 16px;
+                        }
+                        &:last-child{
+                            width: 100%;
+                        }
+                        &:first-child, &:nth-child(2){
+                            width: calc(50% - 10px);
+                            @media #{$small_tab}{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

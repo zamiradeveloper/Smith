@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smith</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Benzin font -->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- fancybox css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <header>
+            <div class="container">
+                <div class="header_block">
+                    <div class="header_logo">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="144" height="44" viewBox="0 0 144 44" fill="none">
+                                <g clip-path="url(#clip0_31_441)">
+                                  <path d="M143.934 42.9286C141.308 42.9286 138.669 42.9286 136.042 42.9512C135.557 42.9512 135.501 42.7485 135.501 42.3432C135.513 36.3771 135.513 30.4109 135.513 24.4448C135.513 23.2065 135.298 22.9364 134.069 22.7338C133.63 22.6662 133.168 22.6437 132.728 22.6324C130.89 22.6211 129.041 22.6437 127.204 22.61C126.663 22.5987 126.516 22.7675 126.516 23.2966C126.539 29.6004 126.516 35.9043 126.539 42.2081C126.539 42.771 126.426 42.9512 125.829 42.9399C123.653 42.9062 121.466 42.9062 119.29 42.9399C118.726 42.9512 118.568 42.8048 118.568 42.2194C118.591 29.6567 118.58 17.0828 118.58 4.52008C118.58 3.97975 118.568 3.42817 118.591 2.88783C118.602 2.6627 118.681 2.43755 118.738 2.21242C118.974 2.29121 119.245 2.30247 119.436 2.43755C120.868 3.46193 122.289 4.52008 123.71 5.56697C124.566 6.19736 125.445 6.81649 126.28 7.48065C126.471 7.63825 126.64 7.96469 126.64 8.21234C126.663 10.6889 126.64 13.1654 126.64 15.6419C126.64 16.475 126.753 16.5875 127.576 16.5875C131.465 16.5875 135.354 16.5875 139.244 16.5875C141.837 16.5875 143.291 17.837 143.686 20.4148C143.787 21.079 143.866 21.7431 143.956 22.4073V42.9286H143.934Z" fill="white"/>
+                                  <path d="M59.3583 22.8014V23.488C59.3583 29.7581 59.347 36.017 59.3695 42.2871C59.3695 42.7936 59.2455 42.9625 58.7157 42.9625C56.3707 42.9399 54.0145 42.9287 51.6696 42.9625C51.106 42.9737 50.982 42.7711 50.982 42.2533C50.9933 35.9831 50.982 29.7243 51.0046 23.4543C51.0046 22.9027 50.8805 22.7001 50.2943 22.7113C48.2313 22.7451 46.1682 22.7225 44.0262 22.7225C44.0149 22.9815 43.9924 23.2179 43.9924 23.4543C43.9924 29.7581 43.9811 36.062 44.0037 42.3658C44.0037 42.8612 43.8346 42.9625 43.3836 42.9512C41.1064 42.9287 38.8404 42.9287 36.5631 42.9512C36.0558 42.9625 35.9317 42.8049 35.943 42.3208C35.9543 35.8931 35.9543 29.4542 35.943 23.0152C35.943 22.61 35.8191 22.1597 35.6274 21.7995C34.872 20.3135 34.0603 18.8501 33.2712 17.3867C32.9105 16.7114 32.9556 16.6325 33.7335 16.6325C45.1536 16.6325 56.5737 16.6325 67.9938 16.6325C68.7604 16.6325 69.5382 16.6777 70.3049 16.6214C72.0635 16.4863 74.4084 18.6926 74.3859 20.6513C74.2957 27.8895 74.3409 35.1277 74.3633 42.3658C74.3633 42.8612 74.1829 42.9512 73.7433 42.9512C71.5675 42.9287 69.3804 42.9287 67.2047 42.9512C66.7312 42.9512 66.6071 42.8049 66.6071 42.3434C66.6184 36.3997 66.6184 30.4561 66.6184 24.5012C66.6184 23.2742 66.3705 22.8802 65.1641 22.8239C63.2701 22.7338 61.3536 22.8014 59.3583 22.8014Z" fill="white"/>
+                                  <path d="M17.2176 11.8145C15.4703 11.8145 13.7228 11.882 11.9754 11.8032C9.50652 11.6794 7.9395 13.4918 7.86059 15.3717C7.78168 17.3979 9.41634 18.9626 11.7161 19.2102C14.76 19.5366 17.7926 19.9194 20.8252 20.336C21.8172 20.471 22.8094 20.7525 23.7676 21.0676C26.879 22.1033 28.7393 24.2534 29.3255 27.4728C29.8102 30.2082 29.7426 32.9436 28.9872 35.6116C28.1417 38.5947 26.0899 40.542 23.2378 41.679C21.0845 42.5458 18.796 42.7709 16.5074 42.8722C11.1637 43.1312 5.85389 42.7935 0.566589 41.8929C0.025458 41.8029 -0.143645 41.4989 0.12692 41.0261C1.33319 38.9098 2.55073 36.7935 3.77956 34.6884C4.07267 34.1819 4.60253 34.1932 5.01965 34.317C8.00714 35.2064 11.0961 35.2626 14.1625 35.4878C15.5041 35.589 16.823 35.4539 18.1195 35.0712C19.4386 34.6884 20.2164 33.8555 20.5434 32.5271C21.0055 30.6923 20.3855 28.6886 18.9312 27.9231C18.221 27.5516 17.3755 27.3827 16.575 27.2814C13.5876 26.9438 10.6001 26.6285 7.70275 25.773C5.6397 25.1651 3.71191 24.3096 2.35908 22.531C1.26556 21.1014 0.75824 19.4354 0.498948 17.7018C0.160741 15.4392 0.12692 13.1541 0.961164 10.9815C2.20126 7.77323 4.69271 5.96087 7.90568 5.00404C9.74327 4.45245 11.626 4.26109 13.5312 4.24983C17.8715 4.21606 22.2119 4.21606 26.5522 4.19355C27.3413 4.19355 27.5104 4.45245 27.1496 5.13913C26.0561 7.2104 24.9626 9.28166 23.8804 11.3642C23.7112 11.6906 23.5082 11.8145 23.1362 11.8145C21.1634 11.8145 19.1905 11.8145 17.2176 11.8145Z" fill="white"/>
+                                  <path d="M95.929 2.02082C96.4364 2.36978 96.9436 2.71874 97.4397 3.06771C99.5028 4.5311 101.566 6.00576 103.64 7.4579C103.978 7.69429 104.125 7.9532 104.125 8.38096C104.102 10.8012 104.125 13.2214 104.102 15.6417C104.102 16.1032 104.238 16.2608 104.711 16.2495C107.304 16.227 109.897 16.2495 112.49 16.2383C112.941 16.2383 113.11 16.3396 113.099 16.8348C113.065 18.4446 113.076 20.0656 113.099 21.6754C113.11 22.1369 112.952 22.2382 112.512 22.2382C109.897 22.2269 107.293 22.2382 104.677 22.2269C104.294 22.2269 104.035 22.2608 104.046 22.756C104.08 26.3357 104.069 29.9154 104.114 33.5063C104.125 34.0805 104.249 34.6546 104.407 35.2174C104.666 36.1743 105.354 36.6582 106.323 36.7821C108.353 37.0298 110.37 36.8946 112.388 36.6245C113.087 36.5345 113.087 36.5345 113.076 37.2099C113.076 38.8196 113.065 40.4406 113.087 42.0503C113.087 42.388 113.031 42.557 112.648 42.602C109.525 42.9396 106.391 43.1423 103.257 42.8045C100.754 42.5344 98.5557 41.6338 97.124 39.4162C96.1884 37.9641 95.8162 36.3431 95.8051 34.6546C95.7712 29.1837 95.7825 23.7016 95.76 18.2195C95.7487 13.1538 95.7261 8.08828 95.7148 3.02268C95.7148 2.70748 95.7148 2.40355 95.7148 2.09961C95.7938 2.06584 95.8614 2.04333 95.929 2.02082Z" fill="white"/>
+                                  <path d="M89.3457 29.7692C89.3457 33.9567 89.3344 38.1331 89.3569 42.3206C89.3569 42.8158 89.2217 42.9622 88.7256 42.9509C86.2116 42.9285 83.6863 42.9285 81.1723 42.9509C80.7327 42.9509 80.541 42.8609 80.541 42.3656C80.5523 33.9567 80.5523 25.5591 80.541 17.1501C80.541 16.7224 80.6763 16.6099 81.0934 16.6099C83.6525 16.621 86.2003 16.6323 88.7594 16.6099C89.2442 16.6099 89.3457 16.7674 89.3457 17.2177C89.3344 21.4053 89.3457 25.5928 89.3457 29.7692Z" fill="white"/>
+                                  <path d="M89.3461 9.82204C87.4634 9.82204 85.6821 9.82204 83.901 9.82204C82.9427 9.82204 81.9845 9.81078 81.0261 9.82204C80.6993 9.82204 80.5527 9.73198 80.5527 9.38302C80.5639 6.53502 80.5527 3.67577 80.5639 0.827771C80.5639 0.703945 80.6203 0.591377 80.6654 0.400009C80.8571 0.490064 81.0036 0.557605 81.1389 0.636404C83.7318 2.25739 86.3247 3.87839 88.929 5.49938C89.2333 5.69075 89.3687 5.89338 89.3574 6.26485C89.3235 7.43557 89.3461 8.59504 89.3461 9.82204Z" fill="#FF2E07"/>
+                                </g>
+                                <defs>
+                                  <clipPath id="clip0_31_441">
+                                    <rect width="144" height="43.2" fill="white" transform="translate(0 0.400002)"/>
+                                  </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                    <nav class="header_nav desc">
+                        <ul class="header_menu desc">
+                            <li><a href="#advantages">Преимущества</a></li>
+                            <li><a href="#catalog">Каталог</a></li>
+                            <li><a href="#services">Услуги</a></li>
+                            <li><a href="#projects">Наши проекты</a></li>
+                        </ul>
+                        <ul class="header_actions desc">
+                            <li>
+                                <a href="tel:+70000000000">+7 000  000 00 00</a>
+                                <a href="mailto:example@gmail.com">example@gmail.com</a>
+                            </li>
+                            <li><a href="#" class="h_btn mini">Оставить заявку</a></li>
+                            <li><a href="#" class="h_btn white_btn mini">Получить каталог</a></li>
+                        </ul>
+                    </nav>
+                    <div class="menu_bars">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 8V6H21V8H3ZM3 13H21V11H3V13ZM3 18H21V16H3V18Z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="h_menu_mob">
+                        <nav class="header_nav mob">
+                            <ul class="header_menu mob">
+                                <li><a href="#advantages">Преимущества</a></li>
+                                <li><a href="#catalog">Каталог</a></li>
+                                <li><a href="#services">Услуги</a></li>
+                                <li><a href="#projects">Наши проекты</a></li>
+                            </ul>
+                            <ul class="header_actions mob">
+                                <li>
+                                    <a href="tel:+70000000000">+7 000  000 00 00</a>
+                                    <a href="mailto:example@gmail.com">example@gmail.com</a>
+                                </li>
+                                <li><a href="#" class="h_btn mini">Оставить заявку</a></li>
+                                <li><a href="#" class="h_btn white_btn mini">Получить каталог</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="hero">
+            <div class="container">
+                <div class="hero_block">
+                    
+                    <div class="hero__slider">
+                        <div class="swiper swiper--hero">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="hero_slide_item">
+                                        <div class="hero_title">
+                                            <span>Комплексное <br class="mob_br"> оснащение</span> <br> спортивных залов <br> и фитнес-клубов
+                                        </div>
+                                        <div class="hero_bottom">
+                                            <div class="hero_content">
+                                                <div class="hero_text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                                </div>
+                                                <div class="hero_actions">
+                                                    <a href="#" class="h_btn">Получить консультацию</a>
+                                                    <a href="#" class="h_btn transparent_btn">Создать 3Д проект бесплатно</a>
+                                                </div>
+                                            </div>
+                                            <div class="video_box">
+                                                <img src="./assets/imgs/hero_gym.png" alt="">
+                                                <span class="play_ic">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="47" viewBox="0 0 40 47" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M40 23.3333L0 46.6667V0L40 23.3333Z" fill="white"/>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="hero_slide_item">
+                                        <div class="hero_title">
+                                            <span>Комплексное <br class="mob_br"> оснащение</span> <br> спортивных залов <br> и фитнес-клубов
+                                        </div>
+                                        <div class="hero_bottom">
+                                            <div class="hero_content">
+                                                <div class="hero_text">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                                </div>
+                                                <div class="hero_actions">
+                                                    <a href="#" class="h_btn">Получить консультацию</a>
+                                                    <a href="#" class="h_btn transparent_btn">Создать 3Д проект бесплатно</a>
+                                                </div>
+                                            </div>
+                                            <div class="video_box">
+                                                <img src="./assets/imgs/hero_gym.png" alt="">
+                                                <span class="play_ic">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="47" viewBox="0 0 40 47" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M40 23.3333L0 46.6667V0L40 23.3333Z" fill="white"/>
+                                                    </svg>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-nav">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                        
+                </div>
+            </div>
+        </section>
+
+        <section class="advantages">
+            <div class="container">
+                <div class="section_title">Наши преимущества</div>
+                <div class="advantages_block desc">
+                    <div class="advantages_item grey_item">
+                        <img src="./assets/imgs/advantages_1.svg" alt="">
+                        <div class="advantages_item_title">ПОЗИЦИОНИРОВАНИЕ <br> И КОНЦЕПЦИЯ КЛУБА</div>
+                    </div>
+                    <div class="advantages_item">
+                        <img src="./assets/imgs/advantages_2.svg" alt="">
+                        <div class="advantages_item_title">Консалтинг</div>
+                    </div>
+                    <div class="advantages_item grey_item">
+                        <img src="./assets/imgs/advantages_3.svg" alt="">
+                        <div class="advantages_item_title">ЗОНИРОВАНИЕ <br> ПОМЕЩЕНИЯ</div>
+                    </div>
+                    <div class="advantages_item">
+                        <img src="./assets/imgs/advantages_4.svg" alt="">
+                        <div class="advantages_item_title">3D ПРОЕКТ</div>
+                    </div>
+                    <div class="advantages_item">
+                        <img src="./assets/imgs/advantages_5.svg" alt="">
+                        <div class="advantages_item_title">ПОДБОР ОБОРУДОВАНИЯ</div>
+                    </div>
+                    <div class="advantages_item grey_item">
+                        <img src="./assets/imgs/advantages_6.svg" alt="">
+                        <div class="advantages_item_title">НАЛИЧИЕ НА СКЛАДЕ <br> В МОСКВЕ</div>
+                    </div>
+                    <div class="advantages_item">
+                        <img src="./assets/imgs/advantages_7.svg" alt="">
+                        <div class="advantages_item_title">ЛИЗИНГ</div>
+                    </div>
+                    <div class="advantages_item grey_item">
+                        <img src="./assets/imgs/advantages_8.svg" alt="">
+                        <div class="advantages_item_title">Trade In</div>
+                    </div>
+                    <div class="advantages_item grey_item">
+                        <img src="./assets/imgs/advantages_9.svg" alt="">
+                        <div class="advantages_item_title">ПОСТАВКА ОБОРУДОВАНИЯ</div>
+                    </div>
+                    <div class="advantages_item">
+                        <img src="./assets/imgs/advantages_10.svg" alt="">
+                        <div class="advantages_item_title">МОНТАЖ И <br> ПУСКОНАЛАДОЧНЫЕ РАБОТЫ</div>
+                    </div>
+                    <div class="advantages_item grey_item">
+                        <img src="./assets/imgs/advantages_11.svg" alt="">
+                        <div class="advantages_item_title">СЕРВИС И ТЕХНИЧЕСКАЯ <br> ПОДДЕРЖКА</div>
+                    </div>
+                    <div class="advantages_item">
+                        <img src="./assets/imgs/advantages_12.svg" alt="">
+                        <div class="advantages_item_title">СКЛАД ЗАПЧАСТЕЙ</div>
+                    </div>
+                    <div class="optimization_box">
+                        <div class="optimization_text">
+                            <div class="optimization_sp_ic">
+                                <img src="./assets/imgs/optimization_ic.svg" alt="">
+                            </div>
+                            Оптимизация позволяющая снизить затраты <br> на оснащение до 40%
+                        </div>
+                        <a href="#" class="h_btn optimization_btn">Заказать звонок</a>
+                    </div>
+                </div>
+                <div class="advantages_block mob">
+                    <div class="advantages__slider">
+                        <div class="swiper swiper--advantages">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="advantages_item grey_item">
+                                        <img src="./assets/imgs/advantages_1.svg" alt="">
+                                        <div class="advantages_item_title">ПОЗИЦИОНИРОВАНИЕ <br> И КОНЦЕПЦИЯ КЛУБА</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="advantages_item">
+                                        <img src="./assets/imgs/advantages_2.svg" alt="">
+                                        <div class="advantages_item_title">Консалтинг</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="advantages_item grey_item">
+                                        <img src="./assets/imgs/advantages_3.svg" alt="">
+                                        <div class="advantages_item_title">ЗОНИРОВАНИЕ <br> ПОМЕЩЕНИЯ</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="advantages_item">
+                                        <img src="./assets/imgs/advantages_4.svg" alt="">
+                                        <div class="advantages_item_title">3D ПРОЕКТ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-nav">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="optimization_box mob">
+                    <div class="optimization_text">
+                        <div class="optimization_sp_ic">
+                            <img src="./assets/imgs/optimization_ic.svg" alt="">
+                        </div>
+                        Оптимизация позволяющая снизить затраты <br> на оснащение до 40%
+                    </div>
+                    <a href="#" class="h_btn optimization_btn">Заказать звонок</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog">
+            <div class="container">
+                <div class="catalog_block">
+                    <div class="section_title">
+                        Каталог продукции
+                        <a href="#" class="h_btn">Получить каталог</a>
+                    </div>
+                    <div class="catalog_items">
+                        <div class="catalog_item">
+                            <div class="catalog_item_content">
+                                <span class="num_sp">01</span>
+                                <div class="catalog_item_title">
+                                    Кардиотренажеры
+                                </div>
+                                <div class="catalog_item_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <img class="catalog_ic_hover" src="./assets/imgs/catalog_ic_hover.svg" alt="">
+                            </div>
+                            <img class="catalog_item_main_img" src="./assets/imgs/catalog_item_main_1.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="390" height="146" viewBox="0 0 390 146" fill="none">
+                                <path d="M-24 82L410 0V175H30L-24 82Z" fill="#FFE9E6"/>
+                            </svg>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_content">
+                                <span class="num_sp">02</span>
+                                <div class="catalog_item_title">
+                                    Грузоблочные тренажеры
+                                </div>
+                                <div class="catalog_item_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <img class="catalog_ic_hover" src="./assets/imgs/catalog_ic_hover.svg" alt="">
+                            </div>
+                            <img class="catalog_item_main_img" src="./assets/imgs/catalog_item_main_2.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="390" height="219" viewBox="0 0 390 219" fill="none">
+                                <path d="M-24 82L410 0V254H30L-52 221L-24 82Z" fill="#FFE9E6"/>
+                            </svg>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_content">
+                                <span class="num_sp">03</span>
+                                <div class="catalog_item_title">
+                                    Нагружаемые дисками
+                                </div>
+                                <div class="catalog_item_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <img class="catalog_ic_hover" src="./assets/imgs/catalog_ic_hover.svg" alt="">
+                            </div>
+                            <img class="catalog_item_main_img" src="./assets/imgs/catalog_item_main_3.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="390" height="298" viewBox="0 0 390 298" fill="none">
+                                <path d="M-24 82L410 0V334H30L-82 313L-24 82Z" fill="#FFE9E6"/>
+                            </svg>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_content">
+                                <span class="num_sp">04</span>
+                                <div class="catalog_item_title">
+                                    Силовые рамы и машины Смита
+                                </div>
+                                <div class="catalog_item_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <img class="catalog_ic_hover" src="./assets/imgs/catalog_ic_hover.svg" alt="">
+                            </div>
+                            <img class="catalog_item_main_img" src="./assets/imgs/catalog_item_main_4.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="390" height="296" viewBox="0 0 390 296" fill="none">
+                                <path d="M-24 3C98.7271 -7.44486 221.863 17.7121 330.659 75.4576L424 125L410 332H30L-120 275L-24 3Z" fill="#FFE9E6"/>
+                            </svg>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_content">
+                                <span class="num_sp">05</span>
+                                <div class="catalog_item_title">
+                                    Функциональный тренинг
+                                </div>
+                                <div class="catalog_item_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <img class="catalog_ic_hover" src="./assets/imgs/catalog_ic_hover.svg" alt="">
+                            </div>
+                            <img class="catalog_item_main_img" src="./assets/imgs/catalog_item_main_5.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="390" height="307" viewBox="0 0 390 307" fill="none">
+                                <path d="M395.176 2.3971C268.84 -8.35496 142.082 17.5419 30.0862 76.9857L-66 127.985L-51.5883 341.074H339.588L494 282.397L395.176 2.3971Z" fill="#EBEBF4"/>
+                            </svg>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_content">
+                                <span class="num_sp">06</span>
+                                <div class="catalog_item_title">
+                                    Скамьи и стойки
+                                </div>
+                                <div class="catalog_item_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <img class="catalog_ic_hover" src="./assets/imgs/catalog_ic_hover.svg" alt="">
+                            </div>
+                            <img class="catalog_item_main_img" src="./assets/imgs/catalog_item_main_6.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="390" height="306" viewBox="0 0 390 306" fill="none">
+                                <path d="M424.524 86.3718L-28 0.871826V349.128H368.22L485 327.232L424.524 86.3718Z" fill="#EBEBF4"/>
+                            </svg>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_content">
+                                <span class="num_sp">07</span>
+                                <div class="catalog_item_title">
+                                    Свободные веса
+                                </div>
+                                <div class="catalog_item_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <img class="catalog_ic_hover" src="./assets/imgs/catalog_ic_hover.svg" alt="">
+                            </div>
+                            <img class="catalog_item_main_img" src="./assets/imgs/catalog_item_main_7.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="390" height="228" viewBox="0 0 390 228" fill="none">
+                                <path d="M389.091 79.1731L-28 0.36792V244.472H337.195L416 212.758L389.091 79.1731Z" fill="#EBEBF4"/>
+                            </svg>
+                        </div>
+                        <div class="catalog_item">
+                            <div class="catalog_item_content">
+                                <span class="num_sp">08</span>
+                                <div class="catalog_item_title">
+                                    Аксессуары
+                                </div>
+                                <div class="catalog_item_desc">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                                </div>
+                                <img class="catalog_ic_hover" src="./assets/imgs/catalog_ic_hover.svg" alt="">
+                            </div>
+                            <img class="catalog_item_main_img" src="./assets/imgs/catalog_item_main_8.png" alt="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="390" height="149" viewBox="0 0 390 149" fill="none">
+                                <path d="M437 92.3664L-47 0.919434V196.081H376.779L437 92.3664Z" fill="#EBEBF4"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project_3d">
+            <div class="container">
+                <div class="project_3d_block">
+                    <div class="project_3d_top">
+                        <div class="project_3d_content">
+                            <div class="section_title">
+                                Создадим <br> <span>3D проект</span> вашего <br> клуба бесплатно
+                            </div>
+                            <div class="project_3d_desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            </div>
+                        </div>
+                        <form class="project_3d_form">
+                            <input type="text" name="name" placeholder="Имя" id="name" class="project_3d_input">
+                            <input type="tel" name="tel" placeholder="Телефон" id="tel" class="project_3d_input">
+                            <input type="email" name="email" placeholder="E-mail" id="email" class="project_3d_input">
+                            <button class="h_btn">Оставить заявку</button>
+                        </form>
+                    </div>
+                    <div class="project_3d_bottom">
+                        <div class="project_3d__slider">
+                            <div class="swiper swiper--project_3d">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="project_3d_slide_item">
+                                            <img class="project_3d_img_main" src="./assets/imgs/project_3d_1.png" alt="">
+                                            <div class="project_3d_item_title">
+                                                <p>Проект на 100 кв. м.</p>
+                                                <div class="project_3d_item_price">Цена от 10 000₽</div>
+                                            </div>
+                                            <div class="project_3d_desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor 
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="112" viewBox="0 0 360 112" fill="none">
+                                                <path d="M-24 82L410 0V254H30L-52 221L-24 82Z" fill="#FFE9E6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project_3d_slide_item">
+                                            <img class="project_3d_img_main" src="./assets/imgs/project_3d_1.png" alt="">
+                                            <div class="project_3d_item_title">
+                                                <p>Проект на 100 кв. м.</p>
+                                                <div class="project_3d_item_price">Цена от 10 000₽</div>
+                                            </div>
+                                            <div class="project_3d_desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor 
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="112" viewBox="0 0 360 112" fill="none">
+                                                <path d="M-24 82L410 0V254H30L-52 221L-24 82Z" fill="#FFE9E6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project_3d_slide_item">
+                                            <img class="project_3d_img_main" src="./assets/imgs/project_3d_1.png" alt="">
+                                            <div class="project_3d_item_title">
+                                                <p>Проект на 100 кв. м.</p>
+                                                <div class="project_3d_item_price">Цена от 10 000₽</div>
+                                            </div>
+                                            <div class="project_3d_desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor 
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="112" viewBox="0 0 360 112" fill="none">
+                                                <path d="M-24 82L410 0V254H30L-52 221L-24 82Z" fill="#FFE9E6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project_3d_slide_item">
+                                            <img class="project_3d_img_main" src="./assets/imgs/project_3d_1.png" alt="">
+                                            <div class="project_3d_item_title">
+                                                <p>Проект на 100 кв. м.</p>
+                                                <div class="project_3d_item_price">Цена от 10 000₽</div>
+                                            </div>
+                                            <div class="project_3d_desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor 
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="112" viewBox="0 0 360 112" fill="none">
+                                                <path d="M-24 82L410 0V254H30L-52 221L-24 82Z" fill="#FFE9E6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="project_3d_slide_item">
+                                            <img class="project_3d_img_main" src="./assets/imgs/project_3d_1.png" alt="">
+                                            <div class="project_3d_item_title">
+                                                <p>Проект на 100 кв. м.</p>
+                                                <div class="project_3d_item_price">Цена от 10 000₽</div>
+                                            </div>
+                                            <div class="project_3d_desc">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor 
+                                            </div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="360" height="112" viewBox="0 0 360 112" fill="none">
+                                                <path d="M-24 82L410 0V254H30L-52 221L-24 82Z" fill="#FFE9E6"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-buttons">
+                                <div class="swiper-button swiper-button-prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                    </svg>
+                                </div>
+                                <div class="swiper-button swiper-button-next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="equipment">
+            <div class="container">
+                <div class="section_title">Наше оборудование используют</div>
+                <div class="equipment_block desc">
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                    <a href="#" class="equipment_item">
+                        <span>Лого</span>
+                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                    </a>
+                </div>
+                <div class="equipment_block mob">
+                    <div class="equipment__slider">
+                        <div class="swiper swiper--equipment">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="#" class="equipment_item">
+                                        <span>Лого</span>
+                                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="equipment_item">
+                                        <span>Лого</span>
+                                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="equipment_item">
+                                        <span>Лого</span>
+                                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="equipment_item">
+                                        <span>Лого</span>
+                                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="equipment_item">
+                                        <span>Лого</span>
+                                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="#" class="equipment_item">
+                                        <span>Лого</span>
+                                        <!-- <img src="./assets/imgs/logo_1.svg" alt=""> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-nav">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="container">
+                <div class="gallery_block">
+                    <div class="section_title">Галерея проектов</div>
+                    <div class="neptun_block">
+                        <div class="neptun_block_left">
+                            <div class="neptun_l__slider">
+                                <div class="swiper swiper--neptun_l">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#neptun_block_right_1" class="neptun_left_item">
+                                                <span>Балашиха</span>
+                                                <p>Нептун</p>
+                                                <img class="neptun_left_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#neptun_block_right_2" class="neptun_left_item">
+                                                <span>Новомосковск</span>
+                                                <p>Атлетика+</p>
+                                                <img class="neptun_left_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#neptun_block_right_3" class="neptun_left_item">
+                                                <span>Москва</span>
+                                                <p>Фитнес Терра</p>
+                                                <img class="neptun_left_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#neptun_block_right_4" class="neptun_left_item">
+                                                <span>Мурманская обл.</span>
+                                                <p>СопкиSport</p>
+                                                <img class="neptun_left_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#neptun_block_right_5" class="neptun_left_item">
+                                                <span>Владиквказ</span>
+                                                <p>ЦентрК</p>
+                                                <img class="neptun_left_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="#neptun_block_right_6" class="neptun_left_item">
+                                                <span>Балашиха</span>
+                                                <p>Нептун</p>
+                                                <img class="neptun_left_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="swiper-buttons">
+                                    <div class="swiper-button swiper-button-prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                            <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button swiper-button-next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                            <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="neptun_block_right show" id="neptun_block_right_1">
+                            <div class="neptun_block_right_top">
+                                <div class="neptun_block_right_top_content">
+                                    <span>Балашиха</span>
+                                    <div class="neptun_title">Нептун</div>
+                                    <p>
+                                        Обновленный тренажерный зал крупнейшего спортивного центра города Балашиха.
+                                    </p>
+                                </div>
+                                <a href="#" class="neptun_block_logo">
+                                    <img src="./assets/imgs/neptun_logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="neptun_block_right_middle">
+                                <div class="neptun__slider">
+                                    <div class="swiper swiper--neptun">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-nav">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-buttons">
+                                        <div class="swiper-button swiper-button-prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button swiper-button-next">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="neptun_block_right_bottom">
+                                <p>
+                                    После тщательного отбора клиентом наша команда была приглашена к оснащению расширенного тренажёрного зала фитнес-клуба "Нептун" в городе Балашиха. Мы с готовностью подключились к проекту, так как фитнес-клуб является одним из самых крупных и успешных не только в городе, но и ближайшем Подмосковье.
+                                </p>
+                                <p>
+                                    Для проекта были предложены лучшие модели бренда Smith, а также ВИИТ-тренажёры Octane, которые гармонично заняли место рядом с существующим оборудованием класса Премиум, что позволило не потерять заявленный уровень клуба в целом для его клиентов.
+                                </p>
+                                <p>
+                                    Вместе с клиентом мы сделали наиболее удачную логистику зала с максимально полным набором отличных тренажеров и аксессуаров.
+                                </p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1190" height="322" viewBox="0 0 1190 322" fill="none">
+                                <path d="M-35.7647 8.65803C325.28 -22.0692 688.56 30.4654 1026.11 162.217L1292 266L1231.13 969.048H121.868L-316 802.658L-35.7647 8.65803Z" fill="#FFE9E6"/>
+                            </svg>
+                        </div>
+                        <div class="neptun_block_right" id="neptun_block_right_2">
+                            <div class="neptun_block_right_top">
+                                <div class="neptun_block_right_top_content">
+                                    <span>Балашиха</span>
+                                    <div class="neptun_title">Нептун</div>
+                                    <p>
+                                        Обновленный тренажерный зал крупнейшего спортивного центра города Балашиха.
+                                    </p>
+                                </div>
+                                <a href="#" class="neptun_block_logo">
+                                    <img src="./assets/imgs/neptun_logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="neptun_block_right_middle">
+                                <div class="neptun__slider">
+                                    <div class="swiper swiper--neptun">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-nav">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-buttons">
+                                        <div class="swiper-button swiper-button-prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button swiper-button-next">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="neptun_block_right_bottom">
+                                <p>
+                                    После тщательного отбора клиентом наша команда была приглашена к оснащению расширенного тренажёрного зала фитнес-клуба "Нептун" в городе Балашиха. Мы с готовностью подключились к проекту, так как фитнес-клуб является одним из самых крупных и успешных не только в городе, но и ближайшем Подмосковье.
+                                </p>
+                                <p>
+                                    Для проекта были предложены лучшие модели бренда Smith, а также ВИИТ-тренажёры Octane, которые гармонично заняли место рядом с существующим оборудованием класса Премиум, что позволило не потерять заявленный уровень клуба в целом для его клиентов.
+                                </p>
+                                <p>
+                                    Вместе с клиентом мы сделали наиболее удачную логистику зала с максимально полным набором отличных тренажеров и аксессуаров.
+                                </p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1190" height="322" viewBox="0 0 1190 322" fill="none">
+                                <path d="M-35.7647 8.65803C325.28 -22.0692 688.56 30.4654 1026.11 162.217L1292 266L1231.13 969.048H121.868L-316 802.658L-35.7647 8.65803Z" fill="#FFE9E6"/>
+                            </svg>
+                        </div>
+                        <div class="neptun_block_right" id="neptun_block_right_3">
+                            <div class="neptun_block_right_top">
+                                <div class="neptun_block_right_top_content">
+                                    <span>Балашиха</span>
+                                    <div class="neptun_title">Нептун</div>
+                                    <p>
+                                        Обновленный тренажерный зал крупнейшего спортивного центра города Балашиха.
+                                    </p>
+                                </div>
+                                <a href="#" class="neptun_block_logo">
+                                    <img src="./assets/imgs/neptun_logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="neptun_block_right_middle">
+                                <div class="neptun__slider">
+                                    <div class="swiper swiper--neptun">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-nav">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-buttons">
+                                        <div class="swiper-button swiper-button-prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button swiper-button-next">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="neptun_block_right_bottom">
+                                <p>
+                                    После тщательного отбора клиентом наша команда была приглашена к оснащению расширенного тренажёрного зала фитнес-клуба "Нептун" в городе Балашиха. Мы с готовностью подключились к проекту, так как фитнес-клуб является одним из самых крупных и успешных не только в городе, но и ближайшем Подмосковье.
+                                </p>
+                                <p>
+                                    Для проекта были предложены лучшие модели бренда Smith, а также ВИИТ-тренажёры Octane, которые гармонично заняли место рядом с существующим оборудованием класса Премиум, что позволило не потерять заявленный уровень клуба в целом для его клиентов.
+                                </p>
+                                <p>
+                                    Вместе с клиентом мы сделали наиболее удачную логистику зала с максимально полным набором отличных тренажеров и аксессуаров.
+                                </p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1190" height="322" viewBox="0 0 1190 322" fill="none">
+                                <path d="M-35.7647 8.65803C325.28 -22.0692 688.56 30.4654 1026.11 162.217L1292 266L1231.13 969.048H121.868L-316 802.658L-35.7647 8.65803Z" fill="#FFE9E6"/>
+                            </svg>
+                        </div>
+                        <div class="neptun_block_right" id="neptun_block_right_4">
+                            <div class="neptun_block_right_top">
+                                <div class="neptun_block_right_top_content">
+                                    <span>Балашиха</span>
+                                    <div class="neptun_title">Нептун</div>
+                                    <p>
+                                        Обновленный тренажерный зал крупнейшего спортивного центра города Балашиха.
+                                    </p>
+                                </div>
+                                <a href="#" class="neptun_block_logo">
+                                    <img src="./assets/imgs/neptun_logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="neptun_block_right_middle">
+                                <div class="neptun__slider">
+                                    <div class="swiper swiper--neptun">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-nav">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-buttons">
+                                        <div class="swiper-button swiper-button-prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button swiper-button-next">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="neptun_block_right_bottom">
+                                <p>
+                                    После тщательного отбора клиентом наша команда была приглашена к оснащению расширенного тренажёрного зала фитнес-клуба "Нептун" в городе Балашиха. Мы с готовностью подключились к проекту, так как фитнес-клуб является одним из самых крупных и успешных не только в городе, но и ближайшем Подмосковье.
+                                </p>
+                                <p>
+                                    Для проекта были предложены лучшие модели бренда Smith, а также ВИИТ-тренажёры Octane, которые гармонично заняли место рядом с существующим оборудованием класса Премиум, что позволило не потерять заявленный уровень клуба в целом для его клиентов.
+                                </p>
+                                <p>
+                                    Вместе с клиентом мы сделали наиболее удачную логистику зала с максимально полным набором отличных тренажеров и аксессуаров.
+                                </p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1190" height="322" viewBox="0 0 1190 322" fill="none">
+                                <path d="M-35.7647 8.65803C325.28 -22.0692 688.56 30.4654 1026.11 162.217L1292 266L1231.13 969.048H121.868L-316 802.658L-35.7647 8.65803Z" fill="#FFE9E6"/>
+                            </svg>
+                        </div>
+                        <div class="neptun_block_right" id="neptun_block_right_5">
+                            <div class="neptun_block_right_top">
+                                <div class="neptun_block_right_top_content">
+                                    <span>Балашиха</span>
+                                    <div class="neptun_title">Нептун</div>
+                                    <p>
+                                        Обновленный тренажерный зал крупнейшего спортивного центра города Балашиха.
+                                    </p>
+                                </div>
+                                <a href="#" class="neptun_block_logo">
+                                    <img src="./assets/imgs/neptun_logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="neptun_block_right_middle">
+                                <div class="neptun__slider">
+                                    <div class="swiper swiper--neptun">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <div class="neptun_slide_item">
+                                                    <img class="neptun_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-nav">
+                                            <div class="swiper-pagination"></div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-buttons">
+                                        <div class="swiper-button swiper-button-prev">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                        <div class="swiper-button swiper-button-next">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                                <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="neptun_block_right_bottom">
+                                <p>
+                                    После тщательного отбора клиентом наша команда была приглашена к оснащению расширенного тренажёрного зала фитнес-клуба "Нептун" в городе Балашиха. Мы с готовностью подключились к проекту, так как фитнес-клуб является одним из самых крупных и успешных не только в городе, но и ближайшем Подмосковье.
+                                </p>
+                                <p>
+                                    Для проекта были предложены лучшие модели бренда Smith, а также ВИИТ-тренажёры Octane, которые гармонично заняли место рядом с существующим оборудованием класса Премиум, что позволило не потерять заявленный уровень клуба в целом для его клиентов.
+                                </p>
+                                <p>
+                                    Вместе с клиентом мы сделали наиболее удачную логистику зала с максимально полным набором отличных тренажеров и аксессуаров.
+                                </p>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1190" height="322" viewBox="0 0 1190 322" fill="none">
+                                <path d="M-35.7647 8.65803C325.28 -22.0692 688.56 30.4654 1026.11 162.217L1292 266L1231.13 969.048H121.868L-316 802.658L-35.7647 8.65803Z" fill="#FFE9E6"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="optimization">
+            <div class="container">
+                <div class="optimization_box">
+                    <div class="optimization_text">
+                        <div class="optimization_sp_ic">
+                            <img src="./assets/imgs/optimization_ic.svg" alt="">
+                        </div>
+                        Мы можем сделать Ваш проект максимально <br> эффективным и успешным!
+                    </div>
+                    <a href="#" class="h_btn optimization_btn">Заказать звонок</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews_block">
+                    <div class="section_title">Отзывы наших клиентов </div>
+                    <div class="reviews__slider">
+                        <div class="swiper swiper--reviews">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="reviews_slide_item">
+                                        <div class="reviews_item_top">
+                                            <img class="reviews_item_img_mini" src="./assets/imgs/reviews_1.png" alt="">
+                                            <div class="reviews_item_title">
+                                                Иван Иванов
+                                                <span class="reviews_item_subtitle">
+                                                    Компания
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <img class="reviews_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                        <div class="reviews_item_stars">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M16.9778 0L20.7994 11.7617H33.1664L23.1613 19.0309L26.9829 30.7926L16.9778 23.5235L6.97267 30.7926L10.7943 19.0309L0.789158 11.7617H13.1562L16.9778 0Z" fill="#EBEBF4"/>
+                                                  </svg>
+                                            </span>
+                                        </div>
+                                        <div class="reviews_item_desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews_slide_item">
+                                        <div class="reviews_item_top">
+                                            <img class="reviews_item_img_mini" src="./assets/imgs/reviews_2.png" alt="">
+                                            <div class="reviews_item_title">
+                                                Диана
+                                                <span class="reviews_item_subtitle">
+                                                    Компания
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <img class="reviews_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                        <div class="reviews_item_stars">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                        </div>
+                                        <div class="reviews_item_desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews_slide_item">
+                                        <div class="reviews_item_top">
+                                            <img class="reviews_item_img_mini" src="./assets/imgs/reviews_3.png" alt="">
+                                            <div class="reviews_item_title">
+                                                Иван Иванов
+                                                <span class="reviews_item_subtitle">
+                                                    Компания
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <img class="reviews_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                        <div class="reviews_item_stars">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                        </div>
+                                        <div class="reviews_item_desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews_slide_item">
+                                        <div class="reviews_item_top">
+                                            <img class="reviews_item_img_mini" src="./assets/imgs/reviews_4.png" alt="">
+                                            <div class="reviews_item_title">
+                                                Иван Иванов
+                                                <span class="reviews_item_subtitle">
+                                                    Компания
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <img class="reviews_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                        <div class="reviews_item_stars">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M16.9778 0L20.7994 11.7617H33.1664L23.1613 19.0309L26.9829 30.7926L16.9778 23.5235L6.97267 30.7926L10.7943 19.0309L0.789158 11.7617H13.1562L16.9778 0Z" fill="#EBEBF4"/>
+                                                  </svg>
+                                            </span>
+                                        </div>
+                                        <div class="reviews_item_desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="reviews_slide_item">
+                                        <div class="reviews_item_top">
+                                            <img class="reviews_item_img_mini" src="./assets/imgs/reviews_1.png" alt="">
+                                            <div class="reviews_item_title">
+                                                Иван Иванов
+                                                <span class="reviews_item_subtitle">
+                                                    Компания
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <img class="reviews_item_main_img" src="./assets/imgs/about_1.png" alt="">
+                                        <div class="reviews_item_stars">
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M17.0217 0L20.8434 11.7617H33.2104L23.2052 19.0309L27.0269 30.7926L17.0217 23.5235L7.01661 30.7926L10.8382 19.0309L0.833103 11.7617H13.2001L17.0217 0Z" fill="#E94628"/>
+                                                  </svg>
+                                            </span>
+                                            <span>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="31" viewBox="0 0 34 31" fill="none">
+                                                    <path d="M16.9778 0L20.7994 11.7617H33.1664L23.1613 19.0309L26.9829 30.7926L16.9778 23.5235L6.97267 30.7926L10.7943 19.0309L0.789158 11.7617H13.1562L16.9778 0Z" fill="#EBEBF4"/>
+                                                  </svg>
+                                            </span>
+                                        </div>
+                                        <div class="reviews_item_desc">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-nav">
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-buttons">
+                            <div class="swiper-button swiper-button-prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button swiper-button-next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                    <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <div class="about_block">
+                    <div class="about_top">
+                        <div class="about_content">
+                            <div class="section_title">О нас</div>
+                            <div class="about_subtitle">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            </div>
+                            <div class="about_desc">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            </div>
+                        </div>
+                        <div class="about_right">
+                            <div class="about__slider">
+                                <div class="swiper swiper--about">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="assets/imgs/about_1.png" data-fancybox="watermark" class="about_slide_item">
+                                                <img src="./assets/imgs/about_1.png" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <a href="assets/imgs/about_1.png" data-fancybox="watermark" class="about_slide_item">
+                                                <img src="./assets/imgs/about_1.png" alt="">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-nav">
+                                        <div class="swiper-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="swiper-buttons">
+                                    <div class="swiper-button swiper-button-prev">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                            <path d="M23.8258 30L26.1758 27.65L18.5424 20L26.1758 12.35L23.8258 10L13.8258 20L23.8258 30Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="swiper-button swiper-button-next">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                            <path d="M16.1742 10L13.8242 12.35L21.4576 20L13.8242 27.65L16.1742 30L26.1742 20L16.1742 10Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about_bottom">
+                        <div class="count_item">
+                            <div class="count_num">
+                                200 <span class="plus_sp">+</span>
+                            </div>
+                            <p class="count_name">Клиентов</p>
+                        </div>
+                        <div class="count_item">
+                            <div class="count_num">14</div>
+                            <p class="count_name">Лет опыта</p>
+                        </div>
+                        <div class="count_item">
+                            <div class="count_num">
+                                200 <span class="plus_sp">+</span>
+                            </div>
+                            <p class="count_name">Клиентов</p>
+                        </div>
+                        <div class="count_item">
+                            <div class="count_num">14</div>
+                            <p class="count_name">Лет опыта</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer_top">
+            <div class="container">
+                <div class="footer_block">
+                    <div class="footer_logo">
+                        <a href="#">
+                            <img src="./assets/imgs/logo-white.svg" alt="">
+                        </a>
+                        <div class="f_address desc">
+                            Адрес <br>
+                            в две строчки
+                        </div>
+                    </div>
+                    
+                    <ul class="footer_actions">
+                        <li>
+                            <a href="tel:+88003025254">8 (800) 302-52-54</a>
+                            <span>Для звонков по России</span>
+                        </li>
+                        <li>
+                            <a href="tel:+88001056780">8 (800) 105-67-80</a>
+                            <span>Для звонков по Москве</span>
+                        </li>
+                        <li>
+                            <a href="mailto:info@wellness.pro">info@wellness.pro</a>
+                            <span>Написать нам</span>
+                        </li>
+                    </ul>
+                    
+                    <ul class="footer_menu">
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">3D проект зала</a></li>
+                        <li><a href="#">Лизинг</a></li>
+                        <li><a href="#">Консалтинг</a></li>
+                        <li><a href="#">Trade In</a></li>
+                        <li><a href="#">Заявка в сервис</a></li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li><a href="#">Страницы</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Проекты</a></li>
+                        <li><a href="#">О компании</a></li>
+                    </ul>
+                    <div class="f_address mob">
+                        Адрес <br>
+                        в две строчки
+                    </div>
+
+                    <div class="footer_btns">
+                        <div class="footer_btns_top">
+                            <a href="#" class="h_btn">Оставить заявку</a>
+                            <a href="#" class="h_btn transparent_btn">Получить каталог</a>
+                        </div>
+                        <div class="footer_btns_bottom">
+                            <span class="f_circle"></span>
+                            <span class="f_circle"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <footer class="footer_bottom">
+            <div class="container">
+                <div class="footer_block">
+                    <ul>
+                        <li><a href="#">Политика конфиденциальности</a></li>
+                        <li><a href="#">Copyright @ 2024</a></li>
+                        <li><a href="#">Защита персональных данных</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <div class="overlay"></div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <!-- fancybox js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- jquery validate -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+
+    <!-- Input Mask -->
+    <script src="https://cdn.jsdelivr.net/npm/inputmask@5.0.8/dist/jquery.inputmask.min.js"></script>
+   
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Main Js -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

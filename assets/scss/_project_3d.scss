@@ -1,0 +1,263 @@
+.project_3d{
+    .project_3d_block{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 60px;
+        background-image: url(../imgs/project_3d_bg.png);
+        background-size: cover;
+        border-radius: 10px;
+        @media #{$small_tab}{
+            padding: 30px;
+        }
+        @media #{$big_mobile}{
+            padding: 20px;
+        }
+        .section_title{
+            color: #fff;
+            span{
+                color: #E94628;
+            }
+            @media #{$small_tab}{
+                margin-bottom: 20px;
+            }
+            @media #{$big_mobile}{
+                margin-bottom: 14px;
+                br{
+                    &:last-child{
+                        display: none;
+                    }
+                }
+            }
+        }
+        .project_3d_top{
+            display: flex;
+            justify-content: space-between;
+            gap: 80px;
+            align-items: center;
+            @media #{$small_laptop}{
+                gap: 40px;
+            }
+            @media #{$tab}{
+                flex-direction: column;
+            }
+            @media #{$small_tab}{
+                gap: 30px;
+            }
+            @media #{$big_mobile}{
+                gap: 22px;
+            }
+            .project_3d_content{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                width: calc(64.2% - 40px);
+                @media #{$small_laptop}{
+                    width: calc(55% - 20px);
+                }
+                @media #{$tab}{
+                    width: 100%;
+                }
+                .project_3d_desc{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 32px;
+                    font-weight: 400;
+                    line-height: normal;
+                    @media #{$middle}{
+                        font-size: 28px;
+                    }
+                    @media #{$big_laptop}{
+                        font-size: 25px;
+                    }
+                    @media #{$small_laptop}{
+                        font-size: 22px;
+                    }
+                    @media #{$small_tab}{
+                        font-size: 18px;
+                    }
+                    @media #{$big_mobile}{
+                        font-size: 16px;
+                    }
+                }
+            }
+            .project_3d_form{
+                border-radius: 10px;
+                background: #FFF;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                width: calc(35.8% - 40px);
+                @media #{$big_laptop}{
+                    padding: 20px;
+                }
+                @media #{$small_laptop}{
+                    width: calc(45% - 20px);
+                }
+                @media #{$tab}{
+                    width: 100%;
+                }
+                .project_3d_input{
+                    border-radius: 10px;
+                    border: 1px solid #353641;
+                    padding: 18px 20px;
+                    color: #353641;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    &::placeholder{
+                        color: rgba(53, 54, 65, 0.30);
+                    }
+                    background-position: 95% center;
+                    &:first-child{
+                        background-image: url(../imgs/user_ic.svg);
+                    }
+                    &:nth-child(2){
+                        background-image: url(../imgs/tel_ic.svg);
+                    }
+                    &:nth-child(3){
+                        background-image: url(../imgs/sms_ic.svg);
+                    }
+                    @media #{$middle}{
+                        font-size: 18px;
+                    }
+                    @media #{$small_laptop}{
+                        font-size: 16px;
+                    }
+                }
+                button{
+                    border: 1px solid #E94628;
+                }
+            }
+        }
+        .project_3d_bottom{
+            position: relative;
+            .project_3d_slide_item{
+                border-radius: 10px;
+                background: #FFF;
+                padding: 20px 30px;
+                position: relative;
+                overflow: clip;
+                cursor: pointer;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transition: all ease-in 0.4s;
+                height: 276px;
+                @media #{$big_laptop}{
+                    padding: 18px;
+                    height: 240px;
+                }
+                @media #{$small_tab}{
+                    padding: 20px 30px;
+                }
+                &:hover{
+                    background: #E94628;
+                    padding: 30px;
+                    @media #{$big_laptop}{
+                        padding: 18px;
+                        padding-top: 25px;
+                    }
+                    @media #{$small_tab}{
+                        padding: 20px 30px;
+                    }
+                    .project_3d_item_title, .project_3d_item_price{
+                        color: #fff;
+                    }
+                    path{
+                        fill: #FF664A;
+                    }
+                    .project_3d_desc{
+                        margin-top: 20px;
+                        height: auto;
+                        position: relative;
+                        z-index: 2;
+                        @media #{$big_laptop}{
+                            margin-top: 12px;
+                        }
+                    }
+                    .project_3d_img_main{
+                        height: 0;
+                    }
+                }
+                .project_3d_desc{
+                    color: #FFF;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: normal;
+                    height: 0;
+                    @media #{$middle}{
+                        font-size: 17px;
+                    }
+                    @media #{$big_laptop}{
+                        font-size: 15px;
+                    }
+                }
+                .project_3d_img_main{
+                    width: 100%;
+                    object-fit: contain;
+                    max-width: 180px;
+                    @media #{$big_laptop}{
+                        max-width: 120px;
+                    }
+                }
+                svg{
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    z-index: 1;
+                }
+                .project_3d_item_title{
+                    color: #353641;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px; /* 150% */
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;
+                    position: relative;
+                    z-index: 2;
+                    margin-right: auto;
+                    @media #{$middle}{
+                        font-size: 18px;
+                    }
+                    @media #{$big_laptop}{
+                        font-size: 16px;
+                    }
+                }
+                .project_3d_item_price{
+                    color: #353641;
+                    font-family: 'Montserrat';
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px; /* 150% */
+                    @media #{$big_laptop}{
+                        font-size: 15px;
+                    }
+                    @media #{$small_tab}{
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .swiper-wrapper{
+        padding-bottom: 0;
+    }
+    .swiper-button-prev{
+        left: -36px;
+        @media #{$big_laptop}{
+            left: -26px;
+        }
+    }
+    .swiper-button-next{
+        right: -36px;
+        @media #{$big_laptop}{
+            right: -26px;
+        }
+    }
+}
